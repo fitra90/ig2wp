@@ -1,5 +1,5 @@
 """
-Simple logging configuration for the IG → WP Auto-Poster.
+Simple logging configuration for the IG -> WP Auto-Poster.
 """
 
 import logging

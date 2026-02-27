@@ -75,7 +75,7 @@ async def upload_media(image_url: str, filename: str | None = None) -> int:
         wp_resp.raise_for_status()
 
     media_id: int = wp_resp.json()["id"]
-    logger.info("Uploaded media to WordPress → ID %d (%s).", media_id, filename)
+    logger.info("Uploaded media to WordPress -> ID %d (%s).", media_id, filename)
     return media_id
 
 
@@ -126,7 +126,7 @@ async def create_post(
 
     post_data = resp.json()
     logger.info(
-        "Created WP post #%d – \"%s\".",
+        "Created WP post #%d - \"%s\".",
         post_data["id"],
         title[:50],
     )
